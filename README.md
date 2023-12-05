@@ -14,7 +14,7 @@ from customlib import fileProcessing as fp, eda
 
 # make instance and generate/view reports
 reporter = eda.reporter(df)   
-reporter.dtale_report()   
-reporter.ydata_profiling()   
-reporter.autoviz_report()   
+reporter.dtale_report()   # generate EDA using dtale
+reporter.ydata_profiling()   # generate EDA using pandas profiling
+reporter.autoviz_report()   # generate EDA using autoviz
   
