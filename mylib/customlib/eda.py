@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import environments as env
 import webbrowser
 ##### Dtale #####
 import dtale
@@ -14,8 +15,10 @@ from autoviz import AutoViz_Class
 # %matplotlib inline
 
 ########### import end ###################
-reportDir = os.path.join(os.getcwd(),"reports")
-os.makedirs(reportDir, exist_ok=True)
+# reportDir = os.path.join(os.getcwd(),"reports")
+# os.makedirs(reportDir, exist_ok=True)
+dirs = env.hosters()
+reportDir = dirs.getReportDir()
 ######################################
 class reporter:
     def __init__(self, data):
